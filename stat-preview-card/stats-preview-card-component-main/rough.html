@@ -7,35 +7,26 @@
     <title>Document</title>
   </head>
   <body>
-    <p id="demo"></p>
+    <h1>JavaScript try and catch Example</h1>
+    <input id="demo" type="text" />
+    <button type="button" onclick="myFunction()">Test Input</button>
+    <p id="demo-2"></p>
     <script>
-      let day;
-      switch (new Date().getDay()) {
-        case 0:
-          day = "sunday";
-          break;
-        case 1:
-          day = "Monday";
-          break;
-        case 2:
-          day = "Tuesday";
-          break;
-        case 3:
-          day = "Wednesday";
-          break;
-        case 4:
-          day = "Thursday";
-          break;
-        case 5:
-          day = "Friday";
-          break;
-        case 6:
-          day = "Saturday";
-          break;
-        default:
-          day = "Not valid date";
+      function myFunction() {
+        const message = document.getElementById("demo-2");
+        message.innerHTML = " ";
+        let x = document.getElementById("demo").value;
+        try {
+          if (x == "") throw "empty";
+          if (isNaN(x)) throw "not a number";
+          if (x < 5) throw "too low";
+          if (x > 10) throw "too high";
+        } catch (err) {
+          message.innerHTML = "Input is " + err;
+        } finally {
+          document.getElementById("demo").value = "";
+        }
       }
-      document.getElementById("demo").innerHTML = "Today is" + day;
     </script>
   </body>
 </html>
