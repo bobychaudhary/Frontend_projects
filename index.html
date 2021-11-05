@@ -6,6 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index Page</title>
   </head>
+  <style>
+    table {
+      text-align: left;
+      line-height: 20px;
+      margin: 20px auto;
+      border-radius: 5px;
+      width: 80%;
+      border-spacing: 0;
+      border-collapse: separate;
+      border: 2px orange;
+    }
+    th {
+      text-transform: uppercase;
+      font-size: 25px;
+    }
+    td {
+      font-size: 20px;
+      color: red;
+    }
+    th:hover {
+      background-color: orange;
+      color: black;
+    }
+    th,
+    td {
+      padding: 15px;
+    }
+    tbody tr:nth-child(odd) {
+      background-color: #edf3e2;
+    }
+    caption {
+      font-size: 40px;
+      color: white;
+      text-shadow: 0 0 10px #ec1919, 0 0 5px #b96b2a;
+      margin-bottom: 10px;
+    }
+    #pno {
+      text-decoration: none;
+      color: orange;
+    }
+    #pno:hover {
+      text-decoration: underline;
+      color: black;
+      font-size: 25px;
+    }
+  </style>
   <body>
     <table>
       <caption>
@@ -22,8 +68,20 @@
         <td>
           <a
             href="./order-summary-component-main/order-summary-component-main/Order-Summary component.html"
+            id="pno"
           >
             Practical-1</a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>3-Column Preview</td>
+        <td>
+          <a
+            href="./3-column-preview-card-component-main/3-column-preview-card-component-main/3-column-preview.html"
+            id="pno"
+            >Practical-2</a
           >
         </td>
       </tr>
