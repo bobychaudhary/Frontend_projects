@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order-Summary</title>
+  </head>
+  <style>
+    body{
+      display: flex;
+      width: 70%;
+      margin: auto;
+      justify-content: center;
+      margin-top: 50px;
+      height: 100vh;
+      text-align: center;
+      border-radius: 20px;
+      background-image: url("./images/pattern-background-desktop.png");
+      overflow:  hidden;
+      
+    }
+    .main{
+      flex-direction: row;
+      width: 350px;
+      height: 500px;
+      background-color: #fff;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 5px 10px 18px #5682bd;
+    }
+    #icon
+    {
+      width: 100%;
+      height: 150px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    h1{
+   
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+    }
+    #p1{
+      text-align: center;
+      font-size: 13px;
+      opacity: 0.7;
+    }
+    .plan{
+    
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(42, 21, 224, 0.045);
+    }
+    .plan p{
+     padding: 20px;
+      margin-top: 10px;
+    }
+    .submit{
+      border-radius: 2px;
+      background-color: rgba(0, 0, 255, 0.514);
+      width: 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 30px;
+      color: white;
+      font-weight: bold;
+      margin-top: 10px;
+      border-radius: 7px;
+      margin-left: 60px;
+    }
+    #p2{
+      font-weight: bold;
+      font-size: 15px;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <div class="main">
+      <div class="icon">
+        <img src="./images/illustration-hero.png" id="icon">
+      </div>
+      <h1>Order Summary</h1>
+      <p id="p1">You can now listen to millions of songs</br> audiobooks, and podcasts on any device</br> anywhere you like!</p>
+    <div class="plan">
+      <img src="./images/icon-music.png">
+      <p style="font-weight: bold;">Annual Plan </br><span style="opacity: 0.5;">$59.99/year</span></p>
+      <p style="color: blue; font-weight: bold;" >Change</p>
+    </div>
+    <div class="submit">
+      <p>Procees to Payment</p>
+    </div>
+    <p id="p2"> Cancel Order</p>
+    </div>
+  </body>
+</html>
