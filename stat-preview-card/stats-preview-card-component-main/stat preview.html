@@ -1,8 +1,19 @@
-body {
-  background-color: #090b1a;
-  color: #fff;
-  display: grid;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Stat Preview
+    </title>
+    <style>
+        body {
+           
+            color: white;
+            display: flex;
+        }
+        
 main {
   height: 100vh;
   margin: auto;
@@ -23,9 +34,9 @@ h2 {
 }
 ​p {
   font-size: 0.9375rem;
-}
-​container {
-  background-color: #1b1938;
+}​
+.container {
+  background-color: blue;
   border-radius: 0.5rem;
   display: flex;
   height: 27.875rem;
@@ -40,7 +51,8 @@ h2 {
 .stats {
   color: #fff;
   display: flex;
-  margin: 4.7rem auto 3.92rem;
+  text-align: center;
+  margin-left: 20px;
 }
 .stats-header {
   font-family: "Inter", sans-serif;
@@ -59,6 +71,7 @@ h2 {
 .item:nth-child(3) {
   margin-left: -0.2rem;
 }
+
 .image-header-desktop {
   background-image: url("https://dimmageiras.github.io/frontend-mentor-stats-preview-card-component/Images/image-header-desktop.jpg");
   background-position: center;
@@ -78,6 +91,7 @@ h2 {
   position: absolute;
   width: 33.75rem;
 }
+
 .color-overlay {
   border-radius: 0 0.5rem 0.5rem 0;
   height: 27.875rem;
@@ -106,7 +120,7 @@ h2 {
   }
 
   .container {
-    display: block;
+   
     height: 48.75rem;
     min-height: 48.75rem;
     min-width: 20.438rem;
@@ -176,3 +190,47 @@ h2 {
     width: 20.438rem;
   }
 }
+
+
+
+    </style>
+
+
+
+
+
+
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="txt">
+        <h1>
+          Get <span style="color: darkslateblue;">insights</span> that help</br> your business grow.
+        </h1>
+        <p>Discover the benifts of data analytics and make</br> better decisions regarding revenue, customer</br>
+        experience, and overall efficiency.</p>
+    </div>
+    <div class="stats">
+                <div class="item">
+                    <h2 class="stats-header">10k+</h2>
+                    <p class="stats-txt">companies</p>
+                </div>
+                <div class="item">
+                    <h2 class="stats-header">314</h2>
+                    <p class="stats-txt">templates</p>
+                </div>
+                <div class="item">
+                    <h2 class="stats-header">12M+</h2>
+                    <p class="stats-txt">queries</p>
+                </div>
+            </div>
+      </div>
+      <div class="image-header-desktop">
+        <img src="./images/image-header-desktop.jpg"  width="100%"/>
+        
+      </div>
+    
+</body>
+</html>
