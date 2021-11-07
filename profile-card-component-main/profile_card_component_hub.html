@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      height: 100vh;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .bg-pattern-card {
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+      height: 30px;
+      width: 350px;
+    }
+    .image-victor {
+      width: 100%;
+      border-radius: 50%;
+      width: 100px;
+    }
+    #name {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 10px;
+      opacity: 0.9;
+    }
+    #age {
+      opacity: 0.5;
+      padding-left: 10px;
+    }
+    #location {
+      font-size: 15px;
+      margin: 10px 10px 25px 10px;
+      font-weight: bold;
+
+      opacity: 0.7;
+    }
+    .following {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      word-spacing: 10px;
+      margin: 10px 15px 0px 0px;
+    }
+    #h1 {
+      font-size: 20px;
+      margin-left: 50px;
+      opacity: 0.9;
+    }
+    #p1 {
+      font-size: 12px;
+      word-spacing: 20px;
+      opacity: 0.7;
+      margin-left: 50px;
+    }
+    .followers {
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      margin-right: 10px;
+    }
+    .likes {
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+    }
+    .photos {
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="bg-pattern-card">
+        <img src="./images/bg-pattern-card.jpg" />
+      </div>
+      <div class="image-victor">
+        <img src="./images/image-victor.jpg" style="border-radius: 50%" />
+      </div>
+      <p id="name">Victor Crest <span id="age">26</span></p>
+      <p id="location">London</p>
+      <hr width="350px" />
+      <div class="following">
+        <div class="followers">
+          <h1 id="h1">80K</h1>
+          <p id="p1">Followers</p>
+        </div>
+        <div class="likes">
+          <h1 id="h1">803K</h1>
+          <p id="p1">Likes</p>
+        </div>
+        <div class="photos">
+          <h1 id="h1">1.4k</h1>
+          <p id="p1">Photos</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
